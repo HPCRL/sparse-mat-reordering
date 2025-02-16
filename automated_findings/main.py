@@ -7,12 +7,17 @@ def get_avg_spearsman_of_ranked_lists(ordered_lists):
     # Ensure we can iterate more than once
     ordered_lists = list(ordered_lists)
     # Extract all keys (ref_values) in the current set (they should be the same for all lists in the set)
-    all_keys = sorted({entry['ref_value'] for ordered_list in ordered_lists for entry in ordered_list})
+    all_keys = sorted({entry['ref_value'] 
+                        for ordered_list in ordered_lists 
+                        for entry in ordered_list})
 
     # Convert each list into a ranking dictionary
     rankings = []
     for ordered_list in ordered_lists:
-        rank_dict = {entry['ref_value']: rank for rank, entry in enumerate(ordered_list, start=1)}
+        rank_dict = {
+            entry['ref_value']: rank 
+            for rank, entry in enumerate(ordered_list, start=1)
+        }
         rankings.append([rank_dict[key] for key in all_keys])  # Align keys
 
     # Compute Spearman's correlation coefficient for all pairs
