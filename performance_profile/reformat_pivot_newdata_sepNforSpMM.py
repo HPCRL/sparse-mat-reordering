@@ -52,12 +52,12 @@ def pivot_spmv_spmm(input_csv, output_dir="."):
             machine_nth_df = machine_df[machine_df['nth'] == nth_val]
             
             # We only have two methods: spmv or spmm
-            for method_val in ['spmv', 'spmm']:
+            for method_val in ['SpMV', 'SpMM']:
                 subset_df = machine_nth_df[machine_nth_df['method'] == method_val]
                 if subset_df.empty:
                     continue
                 
-                if method_val == 'spmv':
+                if method_val == 'SpMV':
                     submethods = spmv_submethods
                     # We don't separate by n for spmv
                     # We'll just do one pivot per submethod
@@ -84,7 +84,7 @@ def pivot_spmv_spmm(input_csv, output_dir="."):
                         print("Created", out_path)
                 
                 else:
-                    # method_val == 'spmm'
+                    # method_val == 'SpMM'
                     submethods = spmm_submethods
                     # We separate by unique n in this subset
                     unique_n_vals = subset_df['n'].unique()
