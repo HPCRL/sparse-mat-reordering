@@ -37,10 +37,10 @@ from collections import defaultdict
 ##############################################################################
 # If None: use ALL reorderings in the CSV.
 # Otherwise: keep only these if they exist.
-ALLOWED_REORDERINGS = None
+# ALLOWED_REORDERINGS = None
 # Example:
 # ALLOWED_REORDERINGS = ["Louvain", "RCM", "baseline", "METIS", "PaToH", "Gorder", "Grappolo"]
-# ALLOWED_REORDERINGS = ["Grappolo", "baseline"]
+ALLOWED_REORDERINGS = ["Grappolo", "baseline"]
 
 ##############################################################################
 # 2) MACHINE INFO & BIN DEFINITIONS
