@@ -31,14 +31,16 @@ def pivot_spmv_spmm(input_csv, output_dir="."):
     spmv_submethods = {
         'basic': 'median_GFLOPs_yax_spmv_basic',
         'xyp':   'median_GFLOPs_yax_xyp_spmv_basic',
-        'cg':    'median_GFLOPs_cg_basic_spmv'
+        'cg':    'median_GFLOPs_cg_basic_spmv',
+        'ios':   'median_GFLOPs_yax_ios_spmv_basic'
     }
     
     # SpMM submethod columns
     spmm_submethods = {
         'basic': 'median_GFLOPs_spmm_basic',
         'xyp':   'median_GFLOPs_spmm_basic_xyp',
-        'gcn':   'median_GFLOPs_spmm_GCN'
+        'gcn':   'median_GFLOPs_spmm_GCN',
+        'ios':   'median_GFLOPs_spmm_basic_ios'
     }
     
     # Unique machines
