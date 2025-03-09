@@ -1,0 +1,189 @@
+Method: SpMV, n: None, Reordering: METIS, Accuracy: 0.9074 ± 0.0060, Precision: 0.8499, Recall: 0.7157, F1-score: 0.7770
+Confusion Matrix:
+[[16346   624]
+ [ 1404  3535]]
+Classification Report:
+0: {'precision': np.float64(0.9209232736428039), 'recall': np.float64(0.9632292280494991), 'f1-score': np.float64(0.9415962627823895), 'support': np.float64(3394.0)}
+1: {'precision': np.float64(0.8498698096919703), 'recall': np.float64(0.7157295858303697), 'f1-score': np.float64(0.776977660054069), 'support': np.float64(987.8)}
+macro avg: {'precision': np.float64(0.8853965416673871), 'recall': np.float64(0.8394794069399344), 'f1-score': np.float64(0.8592869614182291), 'support': np.float64(4381.8)}
+weighted avg: {'precision': np.float64(0.9049051326031379), 'recall': np.float64(0.9074352852047414), 'f1-score': np.float64(0.9044860069687155), 'support': np.float64(4381.8)}
+Method: SpMV, n: None, Reordering: RCM, Accuracy: 0.8739 ± 0.0045, Precision: 0.8386, Recall: 0.7243, F1-score: 0.7772
+Confusion Matrix:
+[[14335   928]
+ [ 1835  4821]]
+Classification Report:
+0: {'precision': np.float64(0.8865593597020988), 'recall': np.float64(0.9391995454699608), 'f1-score': np.float64(0.9121082416260062), 'support': np.float64(3052.6)}
+1: {'precision': np.float64(0.8385635244468151), 'recall': np.float64(0.7243067259596185), 'f1-score': np.float64(0.777174642743089), 'support': np.float64(1331.2)}
+macro avg: {'precision': np.float64(0.8625614420744568), 'recall': np.float64(0.8317531357147896), 'f1-score': np.float64(0.8446414421845476), 'support': np.float64(4383.8)}
+weighted avg: {'precision': np.float64(0.8719848633677604), 'recall': np.float64(0.8739446825908329), 'f1-score': np.float64(0.8711340049567446), 'support': np.float64(4383.8)}
+Method: SpMV, n: None, Reordering: Grappolo, Accuracy: 0.8994 ± 0.0017, Precision: 0.8288, Recall: 0.6640, F1-score: 0.7371
+Confusion Matrix:
+[[16280   627]
+ [ 1534  3031]]
+Classification Report:
+0: {'precision': np.float64(0.9139073343507291), 'recall': np.float64(0.9629147717503683), 'f1-score': np.float64(0.9377618773843283), 'support': np.float64(3381.4)}
+1: {'precision': np.float64(0.8288338339840134), 'recall': np.float64(0.6639649507119387), 'f1-score': np.float64(0.7371243483311514), 'support': np.float64(913.0)}
+macro avg: {'precision': np.float64(0.8713705841673711), 'recall': np.float64(0.8134398612311535), 'f1-score': np.float64(0.8374431128577399), 'support': np.float64(4294.4)}
+weighted avg: {'precision': np.float64(0.895820501367993), 'recall': np.float64(0.899357253508564), 'f1-score': np.float64(0.8951058179042406), 'support': np.float64(4294.4)}
+Method: SpMV, n: None, Reordering: IOU, Accuracy: 0.9025 ± 0.0039, Precision: 0.8012, Recall: 0.5896, F1-score: 0.6792
+Confusion Matrix:
+[[16983   545]
+ [ 1527  2194]]
+Classification Report:
+0: {'precision': np.float64(0.9175104279911231), 'recall': np.float64(0.968906972599652), 'f1-score': np.float64(0.9425053803424955), 'support': np.float64(3505.6)}
+1: {'precision': np.float64(0.8011720784424808), 'recall': np.float64(0.5896294291693729), 'f1-score': np.float64(0.6792111409241768), 'support': np.float64(744.2)}
+macro avg: {'precision': np.float64(0.8593412532168021), 'recall': np.float64(0.7792682008845124), 'f1-score': np.float64(0.8108582606333362), 'support': np.float64(4249.8)}
+weighted avg: {'precision': np.float64(0.8971375643957126), 'recall': np.float64(0.9024895878615038), 'f1-score': np.float64(0.8963983649360385), 'support': np.float64(4249.8)}
+Method: SpMV, n: None, Reordering: PaToH, Accuracy: 0.9012 ± 0.0034, Precision: 0.8380, Recall: 0.6781, F1-score: 0.7495
+Confusion Matrix:
+[[15361   583]
+ [ 1431  3014]]
+Classification Report:
+0: {'precision': np.float64(0.9147945698537026), 'recall': np.float64(0.9634345517232423), 'f1-score': np.float64(0.9384791678155617), 'support': np.float64(3188.8)}
+1: {'precision': np.float64(0.838010483994978), 'recall': np.float64(0.6780652418447695), 'f1-score': np.float64(0.7495054359635096), 'support': np.float64(889.0)}
+macro avg: {'precision': np.float64(0.8764025269243403), 'recall': np.float64(0.820749896784006), 'f1-score': np.float64(0.8439923018895357), 'support': np.float64(4077.8)}
+weighted avg: {'precision': np.float64(0.8980549165529774), 'recall': np.float64(0.9012211591888034), 'f1-score': np.float64(0.8972810046292163), 'support': np.float64(4077.8)}
+Method: SpMV, n: None, Reordering: Louvain, Accuracy: 0.8974 ± 0.0019, Precision: 0.8349, Recall: 0.6807, F1-score: 0.7499
+Confusion Matrix:
+[[16300   667]
+ [ 1581  3371]]
+Classification Report:
+0: {'precision': np.float64(0.9115928958680642), 'recall': np.float64(0.9606884672436458), 'f1-score': np.float64(0.9354927137939665), 'support': np.float64(3393.4)}
+1: {'precision': np.float64(0.8348738144781956), 'recall': np.float64(0.6807357123199707), 'f1-score': np.float64(0.7499002857354196), 'support': np.float64(990.4)}
+macro avg: {'precision': np.float64(0.8732333551731299), 'recall': np.float64(0.8207120897818083), 'f1-score': np.float64(0.8426964997646931), 'support': np.float64(4383.8)}
+weighted avg: {'precision': np.float64(0.8942604518848111), 'recall': np.float64(0.8974405508342617), 'f1-score': np.float64(0.893563091454005), 'support': np.float64(4383.8)}
+Method: SpMV, n: None, Reordering: Gorder, Accuracy: 0.8971 ± 0.0033, Precision: 0.8059, Recall: 0.5800, F1-score: 0.6743
+Confusion Matrix:
+[[16914   551]
+ [ 1651  2280]]
+Classification Report:
+0: {'precision': np.float64(0.9110789736353965), 'recall': np.float64(0.9684511880904665), 'f1-score': np.float64(0.9388821325144985), 'support': np.float64(3493.0)}
+1: {'precision': np.float64(0.8059080558620145), 'recall': np.float64(0.5800042678254459), 'f1-score': np.float64(0.6743254414762582), 'support': np.float64(786.2)}
+macro avg: {'precision': np.float64(0.8584935147487055), 'recall': np.float64(0.7742277279579562), 'f1-score': np.float64(0.8066037869953784), 'support': np.float64(4279.2)}
+weighted avg: {'precision': np.float64(0.8917554815102632), 'recall': np.float64(0.8970837255625714), 'f1-score': np.float64(0.8902760757928914), 'support': np.float64(4279.2)}
+Method: SpMM, n: 8, Reordering: METIS, Accuracy: 0.8842 ± 0.0088, Precision: 0.8213, Recall: 0.7598, F1-score: 0.7893
+Confusion Matrix:
+[[7759  549]
+ [ 798 2524]]
+Classification Report:
+0: {'precision': np.float64(0.9067911744212532), 'recall': np.float64(0.9339182824491358), 'f1-score': np.float64(0.9201423417439386), 'support': np.float64(1661.6)}
+1: {'precision': np.float64(0.8212780739178994), 'recall': np.float64(0.7597911948546064), 'f1-score': np.float64(0.7892556759110486), 'support': np.float64(664.4)}
+macro avg: {'precision': np.float64(0.8640346241695763), 'recall': np.float64(0.8468547386518711), 'f1-score': np.float64(0.8546990088274937), 'support': np.float64(2326.0)}
+weighted avg: {'precision': np.float64(0.8823643288724273), 'recall': np.float64(0.8841788478073948), 'f1-score': np.float64(0.8827545167238613), 'support': np.float64(2326.0)}
+Method: SpMM, n: 8, Reordering: RCM, Accuracy: 0.8543 ± 0.0077, Precision: 0.7962, Recall: 0.7099, F1-score: 0.7505
+Confusion Matrix:
+[[7392  653]
+ [1043 2552]]
+Classification Report:
+0: {'precision': np.float64(0.8764058301408617), 'recall': np.float64(0.9188315724052206), 'f1-score': np.float64(0.8970987846669616), 'support': np.float64(1609.0)}
+1: {'precision': np.float64(0.796242204481568), 'recall': np.float64(0.709874826147427), 'f1-score': np.float64(0.7504741587086301), 'support': np.float64(719.0)}
+macro avg: {'precision': np.float64(0.836324017311215), 'recall': np.float64(0.814353199276324), 'f1-score': np.float64(0.8237864716877958), 'support': np.float64(2328.0)}
+weighted avg: {'precision': np.float64(0.8516473907727209), 'recall': np.float64(0.8542955326460481), 'f1-score': np.float64(0.8518139452923739), 'support': np.float64(2328.0)}
+Method: SpMM, n: 8, Reordering: Grappolo, Accuracy: 0.8718 ± 0.0053, Precision: 0.7911, Recall: 0.7124, F1-score: 0.7494
+Confusion Matrix:
+[[7751  579]
+ [ 883 2187]]
+Classification Report:
+0: {'precision': np.float64(0.8977830447117474), 'recall': np.float64(0.9304921968787516), 'f1-score': np.float64(0.9138107325746152), 'support': np.float64(1666.0)}
+1: {'precision': np.float64(0.7911352192705617), 'recall': np.float64(0.7123778501628665), 'f1-score': np.float64(0.7494283958458767), 'support': np.float64(614.0)}
+macro avg: {'precision': np.float64(0.8444591319911545), 'recall': np.float64(0.8214350235208089), 'f1-score': np.float64(0.8316195642102461), 'support': np.float64(2280.0)}
+weighted avg: {'precision': np.float64(0.8690629724218842), 'recall': np.float64(0.8717543859649123), 'f1-score': np.float64(0.8695428576836303), 'support': np.float64(2280.0)}
+Method: SpMM, n: 8, Reordering: IOU, Accuracy: 0.8863 ± 0.0037, Precision: 0.7736, Recall: 0.6547, F1-score: 0.7090
+Confusion Matrix:
+[[8427  457]
+ [ 824 1562]]
+Classification Report:
+0: {'precision': np.float64(0.9109679317119582), 'recall': np.float64(0.9485594204221103), 'f1-score': np.float64(0.9293703944042029), 'support': np.float64(1776.8)}
+1: {'precision': np.float64(0.7736408415490788), 'recall': np.float64(0.6546529477294458), 'f1-score': np.float64(0.7089796801686458), 'support': np.float64(477.2)}
+macro avg: {'precision': np.float64(0.8423043866305184), 'recall': np.float64(0.801606184075778), 'f1-score': np.float64(0.8191750372864242), 'support': np.float64(2254.0)}
+weighted avg: {'precision': np.float64(0.8818946775947987), 'recall': np.float64(0.8863354037267082), 'f1-score': np.float64(0.8827110177538326), 'support': np.float64(2254.0)}
+Method: SpMM, n: 8, Reordering: PaToH, Accuracy: 0.8754 ± 0.0030, Precision: 0.7982, Recall: 0.7254, F1-score: 0.7596
+Confusion Matrix:
+[[7347  541]
+ [ 808 2134]]
+Classification Report:
+0: {'precision': np.float64(0.9010325008269311), 'recall': np.float64(0.93141595800854), 'f1-score': np.float64(0.9159198523111083), 'support': np.float64(1577.6)}
+1: {'precision': np.float64(0.7982245948349236), 'recall': np.float64(0.7253664114202556), 'f1-score': np.float64(0.7596233727224023), 'support': np.float64(588.4)}
+macro avg: {'precision': np.float64(0.8496285478309273), 'recall': np.float64(0.828391184714398), 'f1-score': np.float64(0.8377716125167554), 'support': np.float64(2166.0)}
+weighted avg: {'precision': np.float64(0.8731067203584688), 'recall': np.float64(0.8754385964912281), 'f1-score': np.float64(0.873460649323275), 'support': np.float64(2166.0)}
+Method: SpMM, n: 8, Reordering: Louvain, Accuracy: 0.8729 ± 0.0026, Precision: 0.8085, Recall: 0.7382, F1-score: 0.7715
+Confusion Matrix:
+[[7663  593]
+ [ 886 2498]]
+Classification Report:
+0: {'precision': np.float64(0.8964441772016419), 'recall': np.float64(0.9281739880298534), 'f1-score': np.float64(0.9119931363624957), 'support': np.float64(1651.2)}
+1: {'precision': np.float64(0.8084794223013978), 'recall': np.float64(0.7381805389247724), 'f1-score': np.float64(0.7714672045841082), 'support': np.float64(676.8)}
+macro avg: {'precision': np.float64(0.8524617997515198), 'recall': np.float64(0.8331772634773129), 'f1-score': np.float64(0.841730170473302), 'support': np.float64(2328.0)}
+weighted avg: {'precision': np.float64(0.8708717872482087), 'recall': np.float64(0.8729381443298969), 'f1-score': np.float64(0.8711392665985326), 'support': np.float64(2328.0)}
+Method: SpMM, n: 8, Reordering: Gorder, Accuracy: 0.8875 ± 0.0063, Precision: 0.7738, Recall: 0.5821, F1-score: 0.6634
+Confusion Matrix:
+[[8820  372]
+ [ 906 1262]]
+Classification Report:
+0: {'precision': np.float64(0.9069257920322699), 'recall': np.float64(0.9595302717508037), 'f1-score': np.float64(0.93244473281163), 'support': np.float64(1838.4)}
+1: {'precision': np.float64(0.773786598410022), 'recall': np.float64(0.5820968274071158), 'f1-score': np.float64(0.6633918520232387), 'support': np.float64(433.6)}
+macro avg: {'precision': np.float64(0.8403561952211458), 'recall': np.float64(0.7708135495789596), 'f1-score': np.float64(0.7979182924174343), 'support': np.float64(2272.0)}
+weighted avg: {'precision': np.float64(0.8815181190842102), 'recall': np.float64(0.8875), 'f1-score': np.float64(0.8810983657791432), 'support': np.float64(2272.0)}
+Method: SpMM, n: 64, Reordering: METIS, Accuracy: 0.8622 ± 0.0050, Precision: 0.8517, Recall: 0.8264, F1-score: 0.8387
+Confusion Matrix:
+[[5848  726]
+ [ 873 4155]]
+Classification Report:
+0: {'precision': np.float64(0.870166122176353), 'recall': np.float64(0.8895646185275853), 'f1-score': np.float64(0.8796801254526938), 'support': np.float64(1314.8)}
+1: {'precision': np.float64(0.8516531293949303), 'recall': np.float64(0.8263695439304473), 'f1-score': np.float64(0.8386737877549638), 'support': np.float64(1005.6)}
+macro avg: {'precision': np.float64(0.8609096257856417), 'recall': np.float64(0.8579670812290162), 'f1-score': np.float64(0.859176956603829), 'support': np.float64(2320.4)}
+weighted avg: {'precision': np.float64(0.862141510095874), 'recall': np.float64(0.862179537654697), 'f1-score': np.float64(0.8619092957409407), 'support': np.float64(2320.4)}
+Method: SpMM, n: 64, Reordering: RCM, Accuracy: 0.8440 ± 0.0047, Precision: 0.8125, Recall: 0.7548, F1-score: 0.7824
+Confusion Matrix:
+[[6544  753]
+ [1058 3257]]
+Classification Report:
+0: {'precision': np.float64(0.8609252362623021), 'recall': np.float64(0.8968047170608505), 'f1-score': np.float64(0.8784426969801968), 'support': np.float64(1459.4)}
+1: {'precision': np.float64(0.8124815233476333), 'recall': np.float64(0.7548088064889918), 'f1-score': np.float64(0.7824066318153766), 'support': np.float64(863.0)}
+macro avg: {'precision': np.float64(0.8367033798049676), 'recall': np.float64(0.8258067617749212), 'f1-score': np.float64(0.8304246643977867), 'support': np.float64(2322.4)}
+weighted avg: {'precision': np.float64(0.8429226800769933), 'recall': np.float64(0.8440407370699996), 'f1-score': np.float64(0.8427561486991875), 'support': np.float64(2322.4)}
+Method: SpMM, n: 64, Reordering: Grappolo, Accuracy: 0.8457 ± 0.0054, Precision: 0.8220, Recall: 0.7845, F1-score: 0.8028
+Confusion Matrix:
+[[6045  774]
+ [ 981 3572]]
+Classification Report:
+0: {'precision': np.float64(0.860376387498763), 'recall': np.float64(0.886493912212796), 'f1-score': np.float64(0.8732309539368088), 'support': np.float64(1363.8)}
+1: {'precision': np.float64(0.8219779564326638), 'recall': np.float64(0.7845350478281323), 'f1-score': np.float64(0.8027983526993708), 'support': np.float64(910.6)}
+macro avg: {'precision': np.float64(0.8411771719657134), 'recall': np.float64(0.8355144800204644), 'f1-score': np.float64(0.83801465331809), 'support': np.float64(2274.4)}
+weighted avg: {'precision': np.float64(0.8450025223824715), 'recall': np.float64(0.8456735384228787), 'f1-score': np.float64(0.8450321697161887), 'support': np.float64(2274.4)}
+Method: SpMM, n: 64, Reordering: IOU, Accuracy: 0.8666 ± 0.0048, Precision: 0.8419, Recall: 0.7688, F1-score: 0.8037
+Confusion Matrix:
+[[6674  577]
+ [ 924 3073]]
+Classification Report:
+0: {'precision': np.float64(0.8784040353384783), 'recall': np.float64(0.9204241545664107), 'f1-score': np.float64(0.8989173254354013), 'support': np.float64(1450.2)}
+1: {'precision': np.float64(0.841941430799823), 'recall': np.float64(0.7688307259073842), 'f1-score': np.float64(0.8037035533149393), 'support': np.float64(799.4)}
+macro avg: {'precision': np.float64(0.8601727330691507), 'recall': np.float64(0.8446274402368976), 'f1-score': np.float64(0.8513104393751704), 'support': np.float64(2249.6)}
+weighted avg: {'precision': np.float64(0.8654463206829451), 'recall': np.float64(0.8665549330566671), 'f1-score': np.float64(0.8650825069346366), 'support': np.float64(2249.6)}
+Method: SpMM, n: 64, Reordering: PaToH, Accuracy: 0.8490 ± 0.0055, Precision: 0.8225, Recall: 0.7996, F1-score: 0.8108
+Confusion Matrix:
+[[5676  755]
+ [ 876 3495]]
+Classification Report:
+0: {'precision': np.float64(0.8663455277283628), 'recall': np.float64(0.8826004995522881), 'f1-score': np.float64(0.8743662060402579), 'support': np.float64(1286.2)}
+1: {'precision': np.float64(0.8224805490656314), 'recall': np.float64(0.7995907159202353), 'f1-score': np.float64(0.8108047823864654), 'support': np.float64(874.2)}
+macro avg: {'precision': np.float64(0.8444130383969972), 'recall': np.float64(0.8410956077362617), 'f1-score': np.float64(0.8425854942133617), 'support': np.float64(2160.4)}
+weighted avg: {'precision': np.float64(0.8485965107455963), 'recall': np.float64(0.8490095034877545), 'f1-score': np.float64(0.8486459959404739), 'support': np.float64(2160.4)}
+Method: SpMM, n: 64, Reordering: Louvain, Accuracy: 0.8490 ± 0.0083, Precision: 0.8404, Recall: 0.8055, F1-score: 0.8225
+Confusion Matrix:
+[[5792  772]
+ [ 982 4066]]
+Classification Report:
+0: {'precision': np.float64(0.8551020582458199), 'recall': np.float64(0.8823890550405885), 'f1-score': np.float64(0.8685104949458475), 'support': np.float64(1312.8)}
+1: {'precision': np.float64(0.8404300749926754), 'recall': np.float64(0.8054699781177325), 'f1-score': np.float64(0.8225393795305551), 'support': np.float64(1009.6)}
+macro avg: {'precision': np.float64(0.8477660666192476), 'recall': np.float64(0.8439295165791604), 'f1-score': np.float64(0.8455249372382013), 'support': np.float64(2322.4)}
+weighted avg: {'precision': np.float64(0.8487237609011601), 'recall': np.float64(0.8489505573408704), 'f1-score': np.float64(0.8485257657309402), 'support': np.float64(2322.4)}
+Method: SpMM, n: 64, Reordering: Gorder, Accuracy: 0.8799 ± 0.0081, Precision: 0.8404, Recall: 0.7449, F1-score: 0.7897
+Confusion Matrix:
+[[7416  486]
+ [ 875 2555]]
+Classification Report:
+0: {'precision': np.float64(0.8944550708709269), 'recall': np.float64(0.9384969455319899), 'f1-score': np.float64(0.9159410653518035), 'support': np.float64(1580.4)}
+1: {'precision': np.float64(0.8403877410466121), 'recall': np.float64(0.7448979591836735), 'f1-score': np.float64(0.7897298780075832), 'support': np.float64(686.0)}
+macro avg: {'precision': np.float64(0.8674214059587694), 'recall': np.float64(0.8416974523578317), 'f1-score': np.float64(0.8528354716796933), 'support': np.float64(2266.4)}
+weighted avg: {'precision': np.float64(0.8780899844398444), 'recall': np.float64(0.8798978084968295), 'f1-score': np.float64(0.8777391571646188), 'support': np.float64(2266.4)}

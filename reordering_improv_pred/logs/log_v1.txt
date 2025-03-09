@@ -1,0 +1,508 @@
+(myenv) sina@anahita:/media/datassd/sina/spmv-omid/proj/reordering_improv_pred$ python experiment.py 
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:08] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:08] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:12] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:13] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:43] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:43] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:44] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:44] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:44] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:44] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:44] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:44] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:44] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:46] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:46] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:49] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:50] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:50] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/sklearn/model_selection/_split.py:805: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=5.
+  warnings.warn(
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:50] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:50] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:50] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:55] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:55] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:55] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:56] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:34:56] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:35:26] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:35:27] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:35:27] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:35:27] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:35:58] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:36:29] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:37:00] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:37:30] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:37:31] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:37:31] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:37:31] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:38:02] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:38:02] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:38:02] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:38:33] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:38:33] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:38:56] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:38:56] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:38:56] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:39:27] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:39:57] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:40:28] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:40:59] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:40:59] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:40:59] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:41:30] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:41:30] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:42:01] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:42:01] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:42:03] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:42:34] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:43:05] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:43:36] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:43:36] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:43:42] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:43:48] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:43:48] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:43:48] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:43:48] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:44:19] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:44:50] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:45:21] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:45:51] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:45:51] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:45:52] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:46:23] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:46:53] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:46:54] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:46:54] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:47:25] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:47:25] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:47:56] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:48:26] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:48:26] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:48:27] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:48:27] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:48:27] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:48:27] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:48:27] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:48:58] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:49:29] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:49:29] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:50:00] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:50:00] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:50:00] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:50:31] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:50:31] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:50:37] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:50:37] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:51:08] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:51:39] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:52:10] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:52:41] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:52:41] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:52:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:52:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:52:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:52:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:52:47] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:53:18] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:53:49] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+/media/datassd/sina/spmv-omid/myenv/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [19:54:20] WARNING: /workspace/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+
+Method: SpMV, n: None, Reordering: METIS, Accuracy: 0.7637 ± 0.0059, Precision: 0.7555, Recall: 0.7077, F1-score: 0.7308
+Method: SpMV, n: None, Reordering: RCM, Accuracy: 0.7618 ± 0.0048, Precision: 0.7881, Recall: 0.8149, F1-score: 0.8013
+Method: SpMV, n: None, Reordering: Grappolo, Accuracy: 0.7337 ± 0.0038, Precision: 0.7236, Recall: 0.6956, F1-score: 0.7093
+Method: SpMV, n: None, Reordering: IOU, Accuracy: 0.7619 ± 0.0066, Precision: 0.7215, Recall: 0.6582, F1-score: 0.6882
+Method: SpMV, n: None, Reordering: PaToH, Accuracy: 0.7548 ± 0.0080, Precision: 0.7414, Recall: 0.7026, F1-score: 0.7214
+Method: SpMV, n: None, Reordering: Louvain, Accuracy: 0.7183 ± 0.0033, Precision: 0.7283, Recall: 0.7087, F1-score: 0.7183
+Method: SpMV, n: None, Reordering: baseline, Accuracy: 1.0000 ± 0.0001, Precision: 0.0000, Recall: 0.0000, F1-score: 0.0000
+Method: SpMV, n: None, Reordering: Gorder, Accuracy: 0.7790 ± 0.0044, Precision: 0.7496, Recall: 0.6753, F1-score: 0.7104
+Method: SpMM, n: 8, Reordering: METIS, Accuracy: 0.7604 ± 0.0069, Precision: 0.7844, Recall: 0.7674, F1-score: 0.7758
+Method: SpMM, n: 8, Reordering: RCM, Accuracy: 0.7067 ± 0.0100, Precision: 0.7401, Recall: 0.7700, F1-score: 0.7547
+Method: SpMM, n: 8, Reordering: Grappolo, Accuracy: 0.7088 ± 0.0064, Precision: 0.7333, Recall: 0.7271, F1-score: 0.7301
+Method: SpMM, n: 8, Reordering: IOU, Accuracy: 0.7461 ± 0.0117, Precision: 0.7326, Recall: 0.6785, F1-score: 0.7044
+Method: SpMM, n: 8, Reordering: PaToH, Accuracy: 0.7434 ± 0.0064, Precision: 0.7604, Recall: 0.7419, F1-score: 0.7510
+Method: SpMM, n: 8, Reordering: Louvain, Accuracy: 0.7093 ± 0.0088, Precision: 0.7442, Recall: 0.7516, F1-score: 0.7478
+Method: SpMM, n: 8, Reordering: baseline, Accuracy: 1.0000 ± 0.0000, Precision: 0.0000, Recall: 0.0000, F1-score: 0.0000
+Method: SpMM, n: 8, Reordering: Gorder, Accuracy: 0.7687 ± 0.0092, Precision: 0.7232, Recall: 0.6343, F1-score: 0.6755
+Method: SpMM, n: 64, Reordering: METIS, Accuracy: 0.8097 ± 0.0046, Precision: 0.8493, Recall: 0.8605, F1-score: 0.8548
+Method: SpMM, n: 64, Reordering: RCM, Accuracy: 0.7478 ± 0.0052, Precision: 0.7797, Recall: 0.8208, F1-score: 0.7996
+Method: SpMM, n: 64, Reordering: Grappolo, Accuracy: 0.7633 ± 0.0099, Precision: 0.8055, Recall: 0.8386, F1-score: 0.8217
+Method: SpMM, n: 64, Reordering: IOU, Accuracy: 0.7862 ± 0.0078, Precision: 0.8131, Recall: 0.7974, F1-score: 0.8051
+Method: SpMM, n: 64, Reordering: PaToH, Accuracy: 0.7824 ± 0.0090, Precision: 0.8212, Recall: 0.8309, F1-score: 0.8260
+Method: SpMM, n: 64, Reordering: Louvain, Accuracy: 0.7536 ± 0.0116, Precision: 0.8024, Recall: 0.8589, F1-score: 0.8296
+Method: SpMM, n: 64, Reordering: baseline, Accuracy: 1.0000 ± 0.0000, Precision: 0.0000, Recall: 0.0000, F1-score: 0.0000
+Method: SpMM, n: 64, Reordering: Gorder, Accuracy: 0.8119 ± 0.0093, Precision: 0.8130, Recall: 0.7695, F1-score: 0.7906

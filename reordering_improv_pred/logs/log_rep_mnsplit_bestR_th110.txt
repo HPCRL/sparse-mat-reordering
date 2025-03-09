@@ -1,0 +1,12 @@
+best_reordering
+baseline    27636
+RCM          5294
+METIS        4231
+Louvain      2556
+PaToH        2033
+IOU          1888
+Gorder       1543
+Grappolo     1257
+Name: count, dtype: int64
+Len of whole X:  11642
+Len of whole X:  11670
