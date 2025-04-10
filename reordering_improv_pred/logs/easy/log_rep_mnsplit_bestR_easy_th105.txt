@@ -1,0 +1,28 @@
+best_reordering
+baseline    21639
+RCM          7149
+METIS        5113
+Louvain      3343
+PaToH        2623
+IOU          2620
+Gorder       2183
+Grappolo     1768
+Name: count, dtype: int64
+Len of whole X:  11642
+Len of whole X:  11670
+Len of whole X:  11642
+--------------------------------------------------------------------------------
+Method: SpMV, n: None
+Custom Accuracy (meets-threshold correctness): 0.7305 ± 0.0048
+Number of samples in subset: 11642
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Method: SpMM, n: 8
+Custom Accuracy (meets-threshold correctness): 0.7773 ± 0.0085
+Number of samples in subset: 11670
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Method: SpMM, n: 64
+Custom Accuracy (meets-threshold correctness): 0.7595 ± 0.0098
+Number of samples in subset: 11642
+--------------------------------------------------------------------------------

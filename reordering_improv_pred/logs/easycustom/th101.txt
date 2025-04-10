@@ -1,0 +1,79 @@
+best_reordering
+baseline    9757
+RCM         8173
+METIS       5185
+Louvain     3907
+IOU         3004
+PaToH       2824
+Gorder      2329
+Grappolo    2143
+Name: count, dtype: int64
+len of method subset:  9320
+Fold's train set size:  7456
+Fold's test set size:  1864
+Fold's train set size:  7456
+Fold's test set size:  1864
+Fold's train set size:  7456
+Fold's test set size:  1864
+Fold's train set size:  7456
+Fold's test set size:  1864
+Fold's train set size:  7456
+Fold's test set size:  1864
+------------------------------------------------------------------------
+len of method subset:  9336
+Fold's train set size:  7464
+Fold's test set size:  1872
+Fold's train set size:  7464
+Fold's test set size:  1872
+Fold's train set size:  7472
+Fold's test set size:  1864
+Fold's train set size:  7472
+Fold's test set size:  1864
+Fold's train set size:  7472
+Fold's test set size:  1864
+------------------------------------------------------------------------
+len of method subset:  9336
+Fold's train set size:  7464
+Fold's test set size:  1872
+Fold's train set size:  7464
+Fold's test set size:  1872
+Fold's train set size:  7472
+Fold's test set size:  1864
+Fold's train set size:  7472
+Fold's test set size:  1864
+Fold's train set size:  7472
+Fold's test set size:  1864
+------------------------------------------------------------------------
+len of method subset:  9330
+Fold's train set size:  7464
+Fold's test set size:  1866
+Fold's train set size:  7462
+Fold's test set size:  1868
+Fold's train set size:  7462
+Fold's test set size:  1868
+Fold's train set size:  7466
+Fold's test set size:  1864
+Fold's train set size:  7466
+Fold's test set size:  1864
+------------------------------------------------------------------------
+
+Custom Classification Report
++----------------------+--------------+
+| Metric               |        Value |
++======================+==============+
+| True Positives (TP)  | 19324        |
++----------------------+--------------+
+| False Positives (FP) |  5370        |
++----------------------+--------------+
+| True Negatives (TN)  |  7217        |
++----------------------+--------------+
+| False Negatives (FN) |  5411        |
++----------------------+--------------+
+| Precision            |     0.782538 |
++----------------------+--------------+
+| Recall               |     0.781241 |
++----------------------+--------------+
+| F-score              |     0.781889 |
++----------------------+--------------+
+| Accuracy             |     0.711136 |
++----------------------+--------------+

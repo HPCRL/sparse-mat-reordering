@@ -1,0 +1,159 @@
+best_reordering
+baseline    22466
+RCM          4351
+METIS        3406
+Louvain      2001
+PaToH        1570
+IOU          1487
+Gorder       1105
+Grappolo      936
+Name: count, dtype: int64
+len of method subset:  9320
+Fold's train set size:  7456
+Fold's test set size:  1864
+Fold's train set size:  7456
+Fold's test set size:  1864
+Fold's train set size:  7456
+Fold's test set size:  1864
+Fold's train set size:  7456
+Fold's test set size:  1864
+Fold's train set size:  7456
+Fold's test set size:  1864
+\Method Classification Report
++----------------------+-------------+
+| Metric               |       Value |
++======================+=============+
+| True Positives (TP)  | 1371        |
++----------------------+-------------+
+| False Positives (FP) |  452        |
++----------------------+-------------+
+| True Negatives (TN)  | 6348        |
++----------------------+-------------+
+| False Negatives (FN) | 1149        |
++----------------------+-------------+
+| Precision            |    0.752057 |
++----------------------+-------------+
+| Recall               |    0.544048 |
++----------------------+-------------+
+| F-score              |    0.631361 |
++----------------------+-------------+
+| Accuracy             |    0.828219 |
++----------------------+-------------+
+------------------------------------------------------------------------
+len of method subset:  9336
+Fold's train set size:  7464
+Fold's test set size:  1872
+Fold's train set size:  7464
+Fold's test set size:  1872
+Fold's train set size:  7472
+Fold's test set size:  1864
+Fold's train set size:  7472
+Fold's test set size:  1864
+Fold's train set size:  7472
+Fold's test set size:  1864
+\Method Classification Report
++----------------------+-------------+
+| Metric               |       Value |
++======================+=============+
+| True Positives (TP)  | 1969        |
++----------------------+-------------+
+| False Positives (FP) |  428        |
++----------------------+-------------+
+| True Negatives (TN)  | 6047        |
++----------------------+-------------+
+| False Negatives (FN) |  892        |
++----------------------+-------------+
+| Precision            |    0.821443 |
++----------------------+-------------+
+| Recall               |    0.688221 |
++----------------------+-------------+
+| F-score              |    0.748954 |
++----------------------+-------------+
+| Accuracy             |    0.858612 |
++----------------------+-------------+
+------------------------------------------------------------------------
+len of method subset:  9336
+Fold's train set size:  7464
+Fold's test set size:  1872
+Fold's train set size:  7464
+Fold's test set size:  1872
+Fold's train set size:  7472
+Fold's test set size:  1864
+Fold's train set size:  7472
+Fold's test set size:  1864
+Fold's train set size:  7472
+Fold's test set size:  1864
+\Method Classification Report
++----------------------+-------------+
+| Metric               |       Value |
++======================+=============+
+| True Positives (TP)  | 2903        |
++----------------------+-------------+
+| False Positives (FP) |  577        |
++----------------------+-------------+
+| True Negatives (TN)  | 4776        |
++----------------------+-------------+
+| False Negatives (FN) | 1080        |
++----------------------+-------------+
+| Precision            |    0.834195 |
++----------------------+-------------+
+| Recall               |    0.728848 |
++----------------------+-------------+
+| F-score              |    0.777971 |
++----------------------+-------------+
+| Accuracy             |    0.822515 |
++----------------------+-------------+
+------------------------------------------------------------------------
+len of method subset:  9330
+Fold's train set size:  7464
+Fold's test set size:  1866
+Fold's train set size:  7462
+Fold's test set size:  1868
+Fold's train set size:  7462
+Fold's test set size:  1868
+Fold's train set size:  7466
+Fold's test set size:  1864
+Fold's train set size:  7466
+Fold's test set size:  1864
+\Method Classification Report
++----------------------+-------------+
+| Metric               |       Value |
++======================+=============+
+| True Positives (TP)  | 3558        |
++----------------------+-------------+
+| False Positives (FP) |  706        |
++----------------------+-------------+
+| True Negatives (TN)  | 3888        |
++----------------------+-------------+
+| False Negatives (FN) | 1178        |
++----------------------+-------------+
+| Precision            |    0.834428 |
++----------------------+-------------+
+| Recall               |    0.751267 |
++----------------------+-------------+
+| F-score              |    0.790667 |
++----------------------+-------------+
+| Accuracy             |    0.798071 |
++----------------------+-------------+
+------------------------------------------------------------------------
+
+Avg-over-all-methods Classification Report
++----------------------+--------------+
+| Metric               |        Value |
++======================+==============+
+| True Positives (TP)  |  9801        |
++----------------------+--------------+
+| False Positives (FP) |  2163        |
++----------------------+--------------+
+| True Negatives (TN)  | 21059        |
++----------------------+--------------+
+| False Negatives (FN) |  4299        |
++----------------------+--------------+
+| Precision            |     0.819208 |
++----------------------+--------------+
+| Recall               |     0.695106 |
++----------------------+--------------+
+| F-score              |     0.752072 |
++----------------------+--------------+
+| Accuracy             |     0.826858 |
++----------------------+--------------+

@@ -1,0 +1,18 @@
+class label df:
+       matrix_name method  n  nth_ class_label
+0        1138_bus   SpMM  8     1   conducive
+1        1138_bus   SpMM  8     7   conducive
+2        1138_bus   SpMM  8    17   conducive
+3        1138_bus   SpMM  8    23   conducive
+4        1138_bus   SpMM  8    63   conducive
+...           ...    ... ..   ...         ...
+23317      zenios   SpMV  1     1   conducive
+23318      zenios   SpMV  1     7   resistant
+23319      zenios   SpMV  1    17   resistant
+23320      zenios   SpMV  1    23   conducive
+23321      zenios   SpMV  1    63   conducive
+
+[23322 rows x 5 columns]
+Count labeled resistant (overall): 3104
+Count labeled conducive (overall): 19031
+Count labeled none (overall): 1187

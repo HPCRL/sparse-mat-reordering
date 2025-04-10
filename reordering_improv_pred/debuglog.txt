@@ -1,0 +1,58 @@
+best_reordering
+baseline    21639
+RCM          7149
+METIS        5113
+Louvain      3343
+PaToH        2623
+IOU          2620
+Gorder       2183
+Grappolo     1768
+Name: count, dtype: int64
+len of method subset:  11642
+---------
+Fold's train set size:  9312
+Fold's test set size:  2330
+Fold's train set size:  9314
+Fold's test set size:  2328
+Fold's train set size:  9314
+Fold's test set size:  2328
+Fold's train set size:  9314
+Fold's test set size:  2328
+Fold's train set size:  9314
+Fold's test set size:  2328
+len of method subset:  11670
+---------
+Fold's train set size:  9330
+Fold's test set size:  2340
+Fold's train set size:  9330
+Fold's test set size:  2340
+Fold's train set size:  9340
+Fold's test set size:  2330
+Fold's train set size:  9340
+Fold's test set size:  2330
+Fold's train set size:  9340
+Fold's test set size:  2330
+len of method subset:  11642
+---------
+Fold's train set size:  9312
+Fold's test set size:  2330
+Fold's train set size:  9314
+Fold's test set size:  2328
+Fold's train set size:  9314
+Fold's test set size:  2328
+Fold's train set size:  9314
+Fold's test set size:  2328
+Fold's train set size:  9314
+Fold's test set size:  2328
+len of method subset:  11484
+---------
+Fold's train set size:  9186
+Fold's test set size:  2298
+Fold's train set size:  9186
+Fold's test set size:  2298
+Fold's train set size:  9188
+Fold's test set size:  2296
+Fold's train set size:  9188
+Fold's test set size:  2296
+Fold's train set size:  9188
+Fold's test set size:  2296

@@ -9,9 +9,8 @@ from tabulate import tabulate
 import argparse
 from constants import MACHINE_NUM_CORES, MACHINE_L1_CACHE, MACHINE_L2_CACHE, MACHINE_L3_CACHE
 
-
 # Create ArgumentParser object
-parser = argparse.ArgumentParser(description="5-fold crossval for predicting best reordering improving more than threshold")
+parser = argparse.ArgumentParser(description="5-fold crossval for three-class classification (resistant/conducive/none)")
 
 # Add an optional argument --th with default value 1.00
 parser.add_argument("--th", type=float, default=1.00, help="Threshold value (default: 1.00)")
@@ -23,6 +22,7 @@ args = parser.parse_args()
 # CONFIG AND DATA LOADING
 # ------------------------------------------------------------------------------------
 BLK_DENSITY_CSV = "../../csvdata/data_wdensities.csv"
+ONE_D_BLK_DENSITY_CSV = "../../csvdata/1d_blk_densities.csv"
 MEASUREMENT_CSV = "../../csvdata/cleaned_all_withI9IOS256_cor.csv"
 
 # PERFORMANCE METRIC & THRESHOLD
@@ -31,6 +31,7 @@ THRESHOLD = args.th
 
 # Load CSVs
 density_df = pd.read_csv(BLK_DENSITY_CSV)
+one_d_density_df = pd.read_csv(ONE_D_BLK_DENSITY_CSV)
 measurement_df = pd.read_csv(MEASUREMENT_CSV)
 
 # Keep only baseline from density data
@@ -40,68 +41,117 @@ density_df = density_df[density_df["reordering"] == "baseline"]
 columns_to_keep = ["matrix_name"] + [f"block_density_{i}" for i in range(1, 11)]
 data = measurement_df.merge(density_df[columns_to_keep], on=["matrix_name"], how="left")
 
-# Add machine-specific cache/core features
-data["num_cores"] = data["machine"].map(MACHINE_NUM_CORES)
-data["l1_cache"]  = data["machine"].map(MACHINE_L1_CACHE)
-data["l2_cache"]  = data["machine"].map(MACHINE_L2_CACHE)
-data["l3_cache"]  = data["machine"].map(MACHINE_L3_CACHE)
+# Rename block density columns to avoid conflict
+one_d_density_cols = ["matrix_name"] + [f"block_density_1d_{i}" for i in range(1, 11)]
+one_d_density_df = one_d_density_df.rename(columns={f"block_density_{i}": f"block_density_1d_{i}" for i in range(1, 11)})
 
-# For convenience
+# Keep only relevant columns
+one_d_density_df = one_d_density_df[one_d_density_cols]
+
+# Merge 1D block density features
+data = data.merge(one_d_density_df, on=["matrix_name"], how="left")
+
+
+
+
+# For convenience, calculate speedup vs. baseline
 speedup_col = f"median_GFLOPs_{PERF_METRIC}"
 baseline_col = f"median_GFLOPs_{PERF_METRIC}_baseline"
 data["actual_speedup"] = data[speedup_col] / data[baseline_col]
 
 # ------------------------------------------------------------------------------------
-# DETERMINE THE BEST REORDERING OR BASELINE FOR EACH GROUP
+# DETERMINE CLASS: "resistant", "conducive", OR "none"
 # ------------------------------------------------------------------------------------
-group_cols = ["matrix_name", "machine", "method", "n", "nth_"]
+def determine_class_label(group_df: pd.DataFrame, threshold: float) -> str:
+    """
+    Given all rows for a single matrix + (method, n) across every machine and reordering,
+    label the matrix as:
+      - 'resistant': speedup < threshold on *every* machine's best reordering
+      - 'conducive': on the majority of machines, there's *some* reordering >= threshold
+      - 'none': otherwise
+    """
+    # Number of distinct machines
+    machines = group_df["machine"].unique()
+    n_machines = len(machines)
+    
+    # Max speedup per machine (across reorderings)
+    max_speedup_by_machine = group_df.groupby("machine")["actual_speedup"].max()
+    
+    # If *all* machines have max_speedup < threshold => resistant
+    if (max_speedup_by_machine < threshold).all():
+        return "resistant"
+    
+    # Count how many machines can reach >= threshold
+    n_good_machines = (max_speedup_by_machine >= threshold).sum()
+    
+    # If majority of machines can hit >= threshold => conducive
+    if n_good_machines >= (n_machines / 2.0):
+        return "conducive"
+    
+    # Otherwise => none
+    return "none"
 
-def find_best_reordering(group_df: pd.DataFrame) -> str:
-    """Return the best reordering (highest speedup >= THRESHOLD), or 'baseline' if none qualifies."""
-    above_threshold = group_df[group_df["actual_speedup"] >= THRESHOLD]
-    if above_threshold.empty:
-        return "baseline"
-    best_row = above_threshold.loc[above_threshold["actual_speedup"].idxmax()]
-    return best_row["reordering"]
-
-best_labels = []
-for _, grp in data.groupby(group_cols):
-    best = find_best_reordering(grp)
-    best_labels.append({
-        **{col: grp.iloc[0][col] for col in group_cols},  # group identifiers
-        "best_reordering": best
+class_labels = []
+group_cols_for_labeling = ["matrix_name", "method", "n"]
+for (matrix_name, method, n_), grp in data.groupby(group_cols_for_labeling):
+    label = determine_class_label(grp, THRESHOLD)
+    class_labels.append({
+        "matrix_name": matrix_name,
+        "method": method,
+        "n": n_,
+        "class_label": label
     })
-best_label_df = pd.DataFrame(best_labels)
+
+class_label_df = pd.DataFrame(class_labels)
+print("class label df:\n", class_label_df)
+# exit()
+
+# Add prints to show overall counts of resistant/conducive
+resistant_count = (class_label_df["class_label"] == "resistant").sum()
+conducive_count = (class_label_df["class_label"] == "conducive").sum()
+none_count = (class_label_df["class_label"] == "none").sum()
+
+print("Count labeled resistant (overall):", resistant_count)
+print("Count labeled conducive (overall):", conducive_count)
+print("Count labeled none (overall):", none_count)
 
 # ------------------------------------------------------------------------------------
-# MERGE BEST REORDERING LABELS ONTO BASELINE ROWS
+# CREATE ONE BASELINE ROW PER (matrix_name, method, n)
 # ------------------------------------------------------------------------------------
+# We only want matrix-level features from baseline row, so group by (matrix_name, method, n)
 baseline_data = data[data["reordering"] == "baseline"].copy()
+
+# For each (matrix_name, method, n) combination, pick the FIRST baseline row
+# (since we only need matrix-level info anyway).
+baseline_data_agg = baseline_data.groupby(["matrix_name", "method", "n"], as_index=False).first()
+
+# Merge in the 3-class labels
 train_df = pd.merge(
-    baseline_data,
-    best_label_df,
-    on=group_cols,
+    baseline_data_agg,
+    class_label_df,
+    on=["matrix_name", "method", "n"],
     how="inner",
 )
 
-print(train_df["best_reordering"].value_counts())
-
+# For matrix-level features, we exclude machine-dependent columns
+# (e.g., num_cores, nth_, l1_cache, l2_cache, l3_cache).
+# We'll keep typical matrix properties: 'm', 'n', 'nnz', plus block densities
 feature_cols = [
-    "nnz",
     "m",
-    "num_cores",
-    "nth_",
-] + [f"block_density_{i}" for i in range(1, 11)] + [
-    "l1_cache",
-    "l2_cache",
-    "l3_cache"
+    # "n",
+    "nnz",
+] + [f"block_density_{i}" for i in range(1, 11)] + [  # 2D densities
+    f"block_density_1d_{i}" for i in range(1, 11)  # 1D densities
 ]
+
+print("Final training set shape:", train_df.shape)
+print("Class distribution:", train_df["class_label"].value_counts())
 
 # ------------------------------------------------------------------------------------
 # MULTI-CLASS MODEL TRAINING (PER METHOD, N)
 # ------------------------------------------------------------------------------------
 methods = ["SpMV", "SpMM"]
-n_values = [8, 64]
+n_values = [8, 64]  # for SpMM we have these n-values, for SpMV we'll use None
 
 results = {}
 
@@ -109,6 +159,7 @@ for method in tqdm(methods, desc="Processing Methods"):
     relevant_n = n_values if method == "SpMM" else [None]
     
     for n_ in relevant_n:
+        # Subset the data for the current method + n
         if n_ is None:
             subset_df = train_df[train_df["method"] == method]
         else:
@@ -118,28 +169,22 @@ for method in tqdm(methods, desc="Processing Methods"):
             continue
         
         X = subset_df[feature_cols]
-        print("Len of whole X: ", len(X))
-        y = subset_df["best_reordering"]
+        y = subset_df["class_label"]
         
-        # Encode reordering labels for multi-class
+        # Encode the labels
         label_encoder = LabelEncoder()
         y_encoded = label_encoder.fit_transform(y)
         
-        # Prepare cross-validation with GroupKFold to avoid splitting the same matrix
+        # Prepare cross-validation with GroupKFold (group by matrix_name)
         gkf = GroupKFold(n_splits=5)
-        
-        model = xgb.XGBClassifier(
-            # use_label_encoder=False,
-            eval_metric="mlogloss"
-        )
+        model = xgb.XGBClassifier(eval_metric="mlogloss")
         
         accuracy_scores = []
         confusion_matrices = []
         classif_reports = []
         
         # Perform group-based CV
-        for train_idx, test_idx in tqdm(gkf.split(X, y_encoded, groups=subset_df["matrix_name"]),
-                                        desc=f"Cross-val for {method} (n={n_})"):
+        for train_idx, test_idx in gkf.split(X, y_encoded, groups=subset_df["matrix_name"]):
             X_train, X_test = X.iloc[train_idx], X.iloc[test_idx]
             y_train, y_test = y_encoded[train_idx], y_encoded[test_idx]
             
@@ -168,35 +213,19 @@ for method in tqdm(methods, desc="Processing Methods"):
         # Sum confusion matrices across folds
         total_conf_matrix = np.sum(confusion_matrices, axis=0)
         
-        # --------------------------------------------------------------------------------
-        # MERGE THE CLASSIFICATION REPORTS (INCL. MACRO AVG, WEIGHTED AVG, SUPPORT)
-        # --------------------------------------------------------------------------------
-        
-        # We'll combine the per-fold 'classification_report' dicts for each label.
-        # We'll average precision/recall/f1 *and* average the 'support' across folds.
-        
+        # Merge the classification reports (macro avg, weighted avg, etc.)
         all_label_names = list(label_encoder.classes_) + ["macro avg", "weighted avg"]
-        merged_report = {}
-        for lbl in all_label_names:
-            merged_report[lbl] = {
-                "precision": [],
-                "recall": [],
-                "f1-score": [],
-                "support": []
-            }
-        
-        # We'll track 'accuracy' separately
+        merged_report = {lbl: {"precision": [], "recall": [], "f1-score": [], "support": []}
+                         for lbl in all_label_names}
         accuracies = []
         
         for rpt in classif_reports:
-            # For each label (including "macro avg" and "weighted avg"), gather metrics
             for lbl in all_label_names:
                 if lbl in rpt:
                     merged_report[lbl]["precision"].append(rpt[lbl].get("precision", 0.0))
                     merged_report[lbl]["recall"].append(rpt[lbl].get("recall", 0.0))
                     merged_report[lbl]["f1-score"].append(rpt[lbl].get("f1-score", 0.0))
                     merged_report[lbl]["support"].append(rpt[lbl].get("support", 0.0))
-            
             if "accuracy" in rpt:
                 accuracies.append(rpt["accuracy"])
         
@@ -206,7 +235,6 @@ for method in tqdm(methods, desc="Processing Methods"):
             final_report[lbl]["precision"] = np.mean(merged_report[lbl]["precision"])
             final_report[lbl]["recall"]    = np.mean(merged_report[lbl]["recall"])
             final_report[lbl]["f1-score"]  = np.mean(merged_report[lbl]["f1-score"])
-            # Now we AVERAGE 'support' as requested
             final_report[lbl]["support"]   = np.mean(merged_report[lbl]["support"])
         
         # Accuracy: average across folds
@@ -233,7 +261,6 @@ for (method, n_), res in results.items():
     
     print("\nClassification Report (averaged across folds):")
     cr = res["classification_report"]
-    # We'll show each label, then accuracy, then macro avg, then weighted avg
     label_list = res["classes"]
     
     table_data = []
@@ -244,7 +271,7 @@ for (method, n_), res in results.items():
             f"{cr[lbl]['precision']:.4f}",
             f"{cr[lbl]['recall']:.4f}",
             f"{cr[lbl]['f1-score']:.4f}",
-            f"{cr[lbl]['support']:.1f}",   # average support, can keep 1 decimal
+            f"{cr[lbl]['support']:.1f}",   # average support
         ]
         table_data.append(row)
     

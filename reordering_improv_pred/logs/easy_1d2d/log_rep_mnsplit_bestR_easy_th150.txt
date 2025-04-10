@@ -1,0 +1,10 @@
+best_reordering
+baseline    39139
+METIS        2184
+RCM          1737
+Louvain      1102
+PaToH         838
+IOU           551
+Grappolo      464
+Gorder        423
+Name: count, dtype: int64

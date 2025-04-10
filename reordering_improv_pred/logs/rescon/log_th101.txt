@@ -1,0 +1,9 @@
+Count labeled resistant (overall): 39
+Count labeled conducive (overall): 4354
+Count labeled none (overall): 262
+Final training set shape: (4655, 60)
+Class distribution: class_label
+conducive    4354
+none          262
+resistant      39
+Name: count, dtype: int64

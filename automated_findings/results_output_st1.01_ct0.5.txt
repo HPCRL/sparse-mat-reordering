@@ -1,0 +1,5 @@
+Processing pair (st=1.01, ct=0.5)
+
+--------------------------------------------------------------------------------------------------------------
+Scenario: Fixed=machine, Reference=reordering, Free=matrix_name
+Global consistency ratio: 0.25
