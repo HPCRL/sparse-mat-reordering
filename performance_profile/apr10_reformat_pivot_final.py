@@ -22,8 +22,8 @@ def pivot_spmv_spmm(input_csv, output_dir="."):
 
     # We process each schedule completely separately,
     # so we filter the input data to contain one schedule here and rerun everything for other schedules
-    df = df[df["schedule"] == "static"]
-    # df = df[df["schedule"] == "nnz-balanced"]
+    # df = df[df["schedule"] == "static"]
+    df = df[df["schedule"] == "nnz-balanced"]
     
     # SpMV submethod columns
     spmv_submethods = {
