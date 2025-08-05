@@ -61,7 +61,7 @@ def generate_rcm_vs_metis_table(df):
 
 # Main execution
 if __name__ == "__main__":
-    file_path = './Perf-m>10k-all-schedules.csv'
+    file_path = '../../data_08-04-2025/Perf-m>10k-all-schedules.csv'
     df = pd.read_csv(file_path)
     df = df[df['m'] > 10000]
     cleaned_table = generate_rcm_vs_metis_table(df)
